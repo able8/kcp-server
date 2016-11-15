@@ -1,0 +1,16 @@
+version: '2'
+services:
+  kcpserver:
+    image: TestCloud:5000/dorry/kcpserver:0.1.0
+    restart: always
+    privileged: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"
+    environment:
+      - LOCAL_PORT=4000
+      - MODE=fast2
+      - PASSWD=test
+      - SERVER_ADDR=139.162.234.112
+      - SSSERVER_PORT=8388
