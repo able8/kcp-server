@@ -1,7 +1,7 @@
 FROM alpine
-
-ENV KCP_VER 20161111
-ENV KCP_URL https://github.com/xtaci/kcptun/releases/download/v$KCP_VER/kcptun-linux-386-$KCP_VER.tar.gz
+MAINTAINER Santa Claus <job@dorry.io>
+ENV KCP_VER 20161207
+ENV KCP_URL https://github.com/xtaci/kcptun/releases/download/v$KCP_VER/kcptun-linux-amd64-$KCP_VER.tar.gz
 
 RUN apk update && \
     apk upgrade && \
@@ -13,4 +13,4 @@ RUN curl -sSL "$KCP_URL" | tar -xvzC /bin/
 
 ADD init.sh ./
 
-ENTRYPOINT sh init.sh
+ENTRYPOINT ./init.sh
