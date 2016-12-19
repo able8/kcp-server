@@ -6,4 +6,4 @@ do
     exit
   fi
 done
-server_linux_amd64 -t $SERVER_ADDR:$SERVER_PORT -l ":$LOCAL_PORT" -mode $MODE -key $PASSWD
+server_linux_amd64 -t $SERVER_ADDR:$SERVER_PORT -l ":$LOCAL_PORT" -mode $MODE -key $PASSWD $OTHERS
