@@ -11,6 +11,7 @@
           dorrypizza/kcp-server 
   ```
 * Start kcp server with fast2 mode
+
   ```
   docker run -t -d --cap-add=NET_ADMIN --network=host --restart=always --name=kcp_fast2 --privileged \
           -e LOCAL_PORT=4001 -e SERVER_ADDR=127.0.0.1 -e SERVER_PORT=8388 \
