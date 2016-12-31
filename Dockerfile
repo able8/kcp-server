@@ -1,6 +1,6 @@
 FROM alpine
 MAINTAINER Santa Claus <job@dorry.io>
-ENV KCP_VER 20161207
+ENV KCP_VER 20161222
 ENV KCP_URL https://github.com/xtaci/kcptun/releases/download/v$KCP_VER/kcptun-linux-amd64-$KCP_VER.tar.gz
 
 RUN apk update && \
