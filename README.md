@@ -1,8 +1,8 @@
 # kcp-server 
 
-## version
-### 20161207
-### 20161222
+### versions
+* 20161207
+* 20161222
 
 ### Usage
 * Start kcp server with manual configuration
